@@ -1,0 +1,186 @@
+<!-- q1.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mental Health Student</title>
+    <link rel="stylesheet" href="css/q1.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-wrapper">
+            <div class="cover-picture-frame">
+                <div class="cover-picture-text">
+                    <h2>User Information Form</h2>
+                    <p>Please fill out the form below:</p>
+                </div>
+            </div>
+            <form id="userForm">
+                <div class="form-container">
+
+                    <!-- Personal Information -->
+                    <div class="form-first-row">
+                        <legend>Personal Information</legend>
+                        <div class="form-group">
+                            <div class="form-group-one">
+                                <label for="age">What is your age?</label>
+                                <input type="number" class="form-control" id="age" name="age" placeholder="Please enter your age" required> 
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="form-group-two">
+                                <label for="gender">What is your gender?</label>
+                                <select class="form-control" id="gender" name="gender" required>
+                                    <option value="" disabled selected>Please Choose</option>
+                                    <option value="Female">Female</option>
+                                    <option value="Male">Male</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="form-group-three">
+                                <label for="ethnicity">What is your ethnicity?</label>
+                                <select class="form-control" id="ethnicity" name="ethnicity" required>
+                                    <option value="" disabled selected>Please Choose</option>
+                                    <option value="Malay">Malay</option>
+                                    <option value="Chinese">Chinese</option>
+                                    <option value="Indian">Indian</option>
+                                    <option value="Others">Others</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="form-group-four">
+                                <label for="marital_status">What is your marital status?</label>
+                                <select class="form-control" id="marital_status" name="marital_status" required>
+                                    <option value="" disabled selected>Please Choose</option>
+                                    <option value="Single">Single</option>
+                                    <option value="In a relationship">In a relationship</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Educational Information -->
+                    <div class="form-second-row">
+                        <legend>Educational Information</legend>
+                        <div class="form-group">
+                            <div class="form-group-five">
+                                <label for="university_type">Type of university you are currently attending?</label>
+                                <select class="form-control" id="university_type" name="university_type" required>
+                                    <option value="" disabled selected>Please Choose</option>
+                                    <option value="Public">Public</option>
+                                    <option value="Private">Private</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="form-group-six">
+                                <label for="study_level">What is your current level of study?</label>
+                                <select class="form-control" id="study_level" name="study_level" required>
+                                    <option value="" disabled selected>Please Choose</option>
+                                    <option value="Diploma/Certificate">Diploma/Certificate</option>
+                                    <option value="Bachelor’s or equivalent">Bachelor’s or equivalent</option>
+                                    <option value="Master’s or equivalent">Master’s or equivalent</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="form-group-seven">
+                                <label for="family_income">What is your family's income category?</label>
+                                <select class="form-control" id="family_income" name="family_income" required>
+                                    <option value="" disabled selected>Please Choose</option>
+                                    <option value="B40">B40</option>
+                                    <option value="M40">M40</option>
+                                    <option value="T20">T20</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="form-group-eight">
+                                <label for="cgpa">What is your CGPA up to this semester?</label>
+                                <select class="form-control" id="cgpa" name="cgpa" required>
+                                    <option value="" disabled selected>Please Choose</option>
+                                    <option value="2.00–2.99">2.00 – 2.99</option>
+                                    <option value="3.00–4.00">3.00 – 4.00</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Lifestyle Information -->
+                    <div class="form-third-row">
+                        <legend>Lifestyle Information</legend>
+                        <div class="form-group">
+                            <div class="form-group-nine">
+                                <label for="exercise_frequency">How often do you exercise in a week?</label>
+                                <select class="form-control" id="exercise_frequency" name="exercise_frequency" required>
+                                    <option value="" disabled selected>Please Choose</option>
+                                    <option value="< 1 time/week">< 1 time/week</option>
+                                    <option value="1–2 times/week">1–2 times/week</option>
+                                    <option value="3 or more times/week">3 or more times/week</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="form-group-ten">
+                                <label for="sleep_pattern">What is your usual sleep pattern?</label>
+                                <select class="form-control" id="sleep_pattern" name="sleep_pattern" required>
+                                    <option value="" disabled selected>Please Choose</option>
+                                    <option value="Normal (7–9 hours)">Normal (7–9 hours)</option>
+                                    <option value="More than normal (> 9 hours)">More than normal (> 9 hours)</option>
+                                    <option value="Less than normal (< 7 hours)">Less than normal (< 7 hours)</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="form-group-eleven">
+                                <label for="smoking_status">Do you smoke or are you exposed to second-hand smoke?</label>
+                                <select class="form-control" id="smoking_status" name="smoking_status" required>
+                                    <option value="" disabled selected>Please Choose</option>
+                                    <option value="Yes">Yes</option>
+                                    <option value="No">No</option>
+                                    <option value="Second-hand smoke">Second-hand smoke</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Study Habits -->
+                    <div class="form-fourth-row">
+                        <legend>Study Habits</legend>
+                        <div class="form-group">
+                            <div class="form-group-twelve">
+                                <label for="study_mode">What is your current mode of study?</label>
+                                <select class="form-control" id="study_mode" name="study_mode" required>
+                                    <option value="" disabled selected>Please Choose</option>
+                                    <option value="Online">Online</option>
+                                    <option value="Physical">Physical</option>
+                                </select>
+                            </div>    
+                        </div>          
+                        <div class="form-group">
+                            <div class="form-group-thirteen">
+                                <label for="learning_experience">Would you say that your current learning experience is satisfactory?</label>
+                                <select class="form-control" id="learning_experience" name="learning_experience" required>
+                                    <option value="" disabled selected>Please Choose</option>
+                                    <option value="Yes">Yes</option>
+                                    <option value="No">No</option>
+                                </select>
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+                <button type="button" id="startButton">
+                    <span class="spinner"></span> START
+                </button>
+            </form>
+        </div>
+    </div>
+    <script src="js/q1.js"></script>     
+</body>
+</html>
